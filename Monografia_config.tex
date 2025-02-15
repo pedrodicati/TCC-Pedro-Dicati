@@ -60,6 +60,7 @@
 \usepackage{longtable}
 \usepackage{verbatim}          % pacote para adicionar comentarios em bloco
 \usepackage{hypernat}
+\usepackage{fancyhdr}
 %\usepackage{titlesec}          % para permitir a alteracao em titulos
 
 %-----------------------------------------------------
@@ -174,15 +175,15 @@
 
 %--------------------------------------------
 %----------------Não Alterar-----------------
-\curso{TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS}
-\grau{Tecnólogo em Análise e Desenvolvimento de Sistemas}
+\curso{BACHARELADO EM ENGENHARIA DE COMPUTAÇÃO}
+\grau{Bacharel em Engenharia de Computação}
 \tipotrabalho{Trabalho de Conclusão de Curso}
 \local{TRÊS LAGOAS}
 \instituicao{%
-	INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE MATO GROSSO DO SUL
-	CÂMPUS TRÊS LAGOAS
+	INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE MATO GROSSO DO SUL\\
+	\textit{CAMPUS} TRÊS LAGOAS
 }
-\preambulo{\imprimirtipotrabalho\ apresentado ao Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul – Câmpus Nova Andradina – como um dos requisitos para a obtenção do título de \imprimirgrau.\\
+\preambulo{\imprimirtipotrabalho\ apresentado ao Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul – \textit{Campus} Três Lagoas – como um dos requisitos para a obtenção do título de \imprimirgrau.\\
 }
 
 % ---
@@ -201,7 +202,7 @@
 	pdftitle={\@title}, 
 	pdfauthor={\@author},
 	pdfsubject={\imprimirpreambulo},
-	pdfcreator={Nome Completo},
+	pdfcreator={Pedro Henrique Geanini Dicati},
 	pdfkeywords={Palavra chave 1}{Palavra chave 2}{Palavra chave 3}{Palavra chave n}, 
 	colorlinks=true,       		% false: boxed links; true: colored links
 	linkcolor=black,          	% color of internal links
@@ -407,7 +408,7 @@
 % ---
 % inserir lista de abreviaturas e siglas
 % --- para inserir lista de Abreviaturas e Siglas, retire o % da linha de baixo
-% \input{Pre_textual/ListaSiglas}
+\input{Pre_textual/ListaSiglas}
 
 
 %*******************************************************
@@ -451,7 +452,7 @@
 \textual
 \pagestyle{meuestilo}
 \input{Capitulos/Cap01-Introducao}
-\input{Capitulos/Cap02-Objetivos}
+% \input{Capitulos/Cap02-Objetivos}
 \input{Capitulos/Cap03-Referencial}
 \input{Capitulos/Cap04-Metodologia}
 \input{Capitulos/Cap05-Resultados}
@@ -463,7 +464,7 @@
 % ----------------------------------------------
 
 %\bibliographystyle{plain}
-\bibliography{referencias}
+\bibliography{referencias.bib}
 
 % ----------------------------------------------
 %            ELEMENTOS PÓS-TEXTUAIS
