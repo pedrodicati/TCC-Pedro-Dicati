@@ -62,6 +62,7 @@
 \usepackage{hypernat}
 \usepackage{fancyhdr}
 %\usepackage{titlesec}          % para permitir a alteracao em titulos
+\usepackage{booktabs}
 
 %-----------------------------------------------------
 %-----------------------------------------------------
@@ -87,7 +88,6 @@
 % ---
 \usepackage{lipsum}				% para geração de dummy text
 % ---
-
 % ---
 % Pacotes de citações
 % ---
@@ -285,7 +285,7 @@
 % ------------------------------------------------------------
 
 % O tamanho do parágrafo é dado por:
-\setlength{\parindent}{1.3cm}
+\setlength{\parindent}{1.5cm}
 
 % Controle do espaçamento entre um parágrafo e outro:
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
@@ -298,7 +298,7 @@
 % ---------------------------------------------------------
 
 % Você pode customizar o nível de divisões que o sumário pode listar com a macro \settocdepth{hnome da subdivisãoi}, sendo nome da subdivisão UM dos valores: chapter, part, section, subsection, subsubsection
-\settocdepth{subsection}
+\settocdepth{subsubsection}
 
 \makeindex
 % ---
@@ -408,7 +408,7 @@
 % ---
 % inserir lista de abreviaturas e siglas
 % --- para inserir lista de Abreviaturas e Siglas, retire o % da linha de baixo
-\input{Pre_textual/ListaSiglas}
+%\input{Pre_textual/ListaSiglas}
 
 
 %*******************************************************
@@ -453,11 +453,11 @@
 \pagestyle{meuestilo}
 \input{Capitulos/Cap01-Introducao}
 % \input{Capitulos/Cap02-Objetivos}
-\input{Capitulos/Cap03-Referencial}
-\input{Capitulos/Cap04-Metodologia}
-\input{Capitulos/Cap05-Resultados}
-\input{Capitulos/Cap06-Conclusoes}
-\input{Capitulos/Cap07-Cronograma}
+\input{Capitulos/Cap02-Referencial}
+\input{Capitulos/Cap03-Metodologia}
+\input{Capitulos/Cap04-Resultados}
+\input{Capitulos/Cap05-Conclusoes}
+% \input{Capitulos/Cap07-Cronograma}
 
 % ----------------------------------------------
 %         Referências bibliográficas
@@ -469,7 +469,7 @@
 % ----------------------------------------------
 %            ELEMENTOS PÓS-TEXTUAIS
 % ----------------------------------------------
-\postextual
+%\postextual
 
 % -----------------------------------------------
 %                  Glossário
@@ -481,11 +481,11 @@
 % ------------------------------------------------
 % Apêndices
 % ------------------------------------------------
-\input{Pos_textual/ApendiceA}
+%\input{Pos_textual/ApendiceA}
 % ----------------------------------------------------------
 % Anexos
 % ----------------------------------------------------------
-\input{Pos_textual/AnexoA}
+%\input{Pos_textual/AnexoA}
 %-----------------------------------------------------------
 % ÍNDICE REMISSIVO
 %-----------------------------------------------------------
